@@ -36,7 +36,8 @@ url: http://ninetylawn.com # the base hostname & protocol for your site, e.g. ht
 # Build settings
 markdown: kramdown
 #theme: minima
-theme: minimal-mistakes-jekyll
+#theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes
 plugins:
   - jekyll-feed
 
