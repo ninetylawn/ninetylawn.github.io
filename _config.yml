@@ -14,33 +14,38 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: ninety lawn
-
-# Authors
-authors:
-  surge:
-    name: Surge Biswas
-    display_name: Surge
-    email: surojitbiswas@g.harvard.edu
-    twitter: surgebiswas
-  frances:
-    name: Frances Anastassacos
-    display_name: Frances
-    email: anastassacos@g.harvard.edu
-
+email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Thoughts on biotech science and starting up.
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: http://ninetylawn.com # the base hostname & protocol for your site, e.g. http://example.com
+  ninety lawn
+url: http://ninetylawn.com
+twitter_username: surgebiswas
+github_username: surgebiswas
+minimal_mistakes_skin: dark
 
 # Build settings
 markdown: kramdown
-#theme: minima
-#theme: minimal-mistakes-jekyll
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins (previously gems:)
 plugins:
-  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
+  - jemoji
+  - jekyll-remote-theme
+
+author:
+  name   : "Surge Biswas"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "Experimenting with Jekyll"
+  email  : # optional
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -53,3 +58,16 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
