@@ -25,7 +25,6 @@ The theme in both of these examples is as follows: when you make changes to inte
 
 ![My helpful screenshot]({{ "/assets/butterfly_effect_fig.jpg" | absolute_url }})
 
-\*
 
 
 
