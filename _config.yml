@@ -59,6 +59,8 @@ author:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+include: ["_pages"]
+
 defaults:
   # _posts
   - scope:
@@ -81,4 +83,4 @@ defaults:
       layout: single
       author_profile: true
 
-include: ["_pages"]
+
